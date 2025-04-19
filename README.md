@@ -1,71 +1,69 @@
-# Clustering Analysis on Seeds Dataset
+# 🌾 Clustering Analysis on the Seeds Dataset
 
-This project explores clustering techniques on the Seeds dataset using various preprocessing methods. We evaluate the performance of **K-Means**, **Hierarchical Clustering**, and **KMeans Shift**, alongside different levels of data preprocessing such as normalization, transformation, and PCA.
+This project explores a variety of clustering techniques applied to the Seeds dataset, focusing on how different preprocessing strategies impact performance. The algorithms evaluated include **K-Means**, **Hierarchical Clustering**, and **Mean Shift Clustering**, tested under various combinations of normalization, transformation, and dimensionality reduction using PCA.
 
-## 🔗 Google Colab
+## 🔗 Run on Google Colab
 
-You can view and run the notebook here:  
-[Open in Google Colab](https://colab.research.google.com/drive/1J-9E6oJUfPQFp5gpCdSyg3cE7ENjRd4d#scrollTo=XR9r30jCCmuP)
+Easily view and run the notebook:  
+[Open in Google Colab](https://colab.research.google.com/drive/10gAUFsZOWRoXkeMb8dZVphdxn9EEbFnJ?usp=sharing)
 
-## 📊 Dataset
+## 📊 Dataset Overview
 
-- **Name**: Seeds Dataset  
-- **Source**: UCI Machine Learning Repository
+- **Dataset**: Seeds Dataset  
+- **Source**: UCI Machine Learning Repository  
+- **Description**: Contains measurements of geometrical features of wheat kernels from three distinct varieties, ideal for unsupervised clustering tasks.
 
-The dataset consists of measurements of geometrical properties of kernels belonging to three different varieties of wheat.
-
-## 🧪 Clustering Techniques
-
-The following clustering algorithms were applied:
+## 🤖 Clustering Algorithms Explored
 
 - **K-Means Clustering**
 - **Hierarchical Clustering**
-- **KMeans Shift Clustering**
+- **Mean Shift Clustering**
 
-## ⚙️ Preprocessing Approaches
+## ⚙️ Preprocessing Strategies
 
-Each algorithm was tested under four preprocessing scenarios:
+The clustering algorithms were tested under the following preprocessing configurations:
 
-1. **No Preprocessing**
+1. **Raw Data (No Preprocessing)**
 2. **Normalization Only**
 3. **Transformation + Normalization (T+N)**
 4. **Transformation + Normalization + PCA (T+N+PCA)**
 
 ---
 
-## 🏆 Results
+## 🏆 Key Results
 
-| Criterion | Best Result |
-|----------|-------------|
-| **Best Clustering Algorithm** | K-Means (with T+N+PCA) |
-| **Best Number of Clusters** | 3 |
-| **Best Silhouette Score** | ~0.32 (K-Means with T+N+PCA) |
+| Evaluation Metric           | Best Outcome                   |
+|----------------------------|--------------------------------|
+| **Top Performing Algorithm** | K-Means (with T+N+PCA)        |
+| **Optimal Number of Clusters** | 3                           |
+| **Highest Silhouette Score** | ~0.32 (K-Means with T+N+PCA)  |
 
-K-Means performed consistently well across all preprocessing combinations. Using all three steps — transformation, normalization, and PCA — led to the highest silhouette score, indicating well-formed clusters.
+K-Means demonstrated the most consistent and accurate performance across all preprocessing scenarios, especially when combined with transformation, normalization, and PCA.
 
 ---
 
-## 📈 Visualizations
+## 📉 Visualizations
 
-The clustering results were visualized using 2D projections post-PCA to demonstrate the separation between clusters across different techniques and preprocessing steps.
+2D PCA projections were used to visualize clustering outcomes, helping illustrate the separation and structure of the data clusters under each method.
 
 ---
 
 ## 🧠 Conclusion
 
-- **K-Means** clustering proved to be the most reliable and effective algorithm, especially when used with full preprocessing (T+N+PCA).
-- **Hierarchical Clustering** improved with normalization but did not outperform K-Means.
-- **KMeans Shift** worked decently without preprocessing but had higher computational costs.
-- **Optimal clustering was achieved with 3 clusters**, matching the expected number of seed types in the dataset.
-- **Silhouette analysis confirmed** the quality of clustering, with the best score achieved using K-Means after full preprocessing.
+- **K-Means** clustering was the most effective and reliable method, particularly with full preprocessing (T+N+PCA).
+- **Hierarchical Clustering** improved with normalization but remained less effective overall.
+- **Mean Shift** worked reasonably well with raw data but incurred higher computational costs.
+- **Three clusters** aligned perfectly with the true number of wheat seed types.
+- **Silhouette scores** confirmed the best clustering configuration involved all three preprocessing steps with K-Means.
 
 ---
 
-## 📄 PDF Report
+## 📄 Detailed Report
 
-A full breakdown of results and metrics is available in the [PDF report](https://github.com/AnMaster15/clustering/blob/main/Results_Clustering%20(1)%202%20(1).pdf).
+A comprehensive breakdown of results, metrics, and visualizations is available in the full report:  
+[Download PDF Report](https://github.com/SamdeepSharma/Clustering/blob/main/Results_Clustering%20(1)%202%20(1).pdf)
 
 ## 👤 Author
 
-**Anchit Mehra**  
-3co18
+**Samdeep Sharma**  
+102217183
