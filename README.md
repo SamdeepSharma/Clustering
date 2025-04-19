@@ -61,7 +61,7 @@ K-Means demonstrated the most consistent and accurate performance across all pre
 ## 📄 Detailed Report
 
 A comprehensive breakdown of results, metrics, and visualizations is available in the full report:  
-[Download PDF Report](https://github.com/SamdeepSharma/Clustering/blob/main/Results_Clustering%20(1)%202%20(1).pdf)
+[Download PDF Report](https://github.com/SamdeepSharma/Clustering/blob/main/Results_Clustering.pdf)
 
 ## 👤 Author
 
